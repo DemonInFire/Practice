@@ -1,29 +1,38 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-    <meta name = "description" content = "User posts">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="User posts">
     <title>User posts</title>
-    <link rel = "stylesheet" type = "text/css" href = "./style.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
+
 <body>
-    <header id = "header" class = "header">
-        <div class = "header-container">
-            <h1 id = "header_title">User posts</h1>
-        </div>
-    </header>
-    <div class = "main-container">
-        <div id = "all_posts" class = "all-posts">
-        </div>
-        <div id = "favorite_posts" class = "favorite-posts">
-            <h1>Favorite posts</h1>
-        </div>
-        <div id = "selected_post" class = "selected-post">
-            <h1>This choosen</h1>
-        </div>
+    <div class="post-container">
+        <header id="header" class="header">
+            <div class="header-container">
+                <h1 id="header_title">User posts</h1>
+            </div>
+        </header>
+        <main class="main-container">
+            <div class="left-part">
+                <div id="all_posts" class="all-posts">
+
+                </div>
+                <div id="selected_post" class="selected-post">
+                    <h1 id="selected_post_h1">Title</h1>
+                    <blockquote id="selected_post_blockquote">Information</blockquote>
+                </div>
+            </div>
+            <div id="favorite_posts" class="favorite-posts">
+
+            </div>
+        </main>
     </div>
 
-    <script src = "postsLogic.js"></script>
+    <script src="postsLogic.js"></script>
 </body>
+
 </html>

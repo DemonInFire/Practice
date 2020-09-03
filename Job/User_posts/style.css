@@ -1,56 +1,70 @@
-.header-container {
-    text-align: center;
+body {
+    margin: 0;
 }
 
-.main-container {
+main {
     display: flex;
-    flex-wrap: wrap;
+}
+
+.header {
+    text-align: center;
+    width: 100%;
 }
 
 .all-posts {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    margin: 15px;
+    margin: 5px;
     border: 5px solid black;
-    width: 800px;
-    height: 500px;
+    width: 71vw;
+    height: 50vh;
     overflow: scroll;
 }
 
 .favorite-posts {
-    padding: 10px;
-    margin: 15px;
+    margin: 5px;
+    padding-left: 10vh;
     border: 5px solid black;
     display: flex;
     flex-direction: column;
-}
-
-.favorite-posts h1{
-    text-align: center;
-    width: 300px;
+    overflow: scroll;
+    width: 30vw;
+    height: 80.6vh;
 }
 
 .selected-post {
-    padding: 10px;
-    margin: 15px;
     border: 5px solid black;
     flex-flow: row wrap;
+    height: 25vh;
+    margin-left: 5px;
+    width: 73.2vw;
+}
+
+.selected-post h1 {
+    text-align: center;
+}
+
+.selected-post blockquote {
+    text-align: center;
 }
 
 .post-style {
     border: 2px double grey;
+    position: relative;
     margin: 5px;
     padding: 2px;
-    border-radius: 25px;
-    max-width: 240px;
+    border-radius: 5px;
+    width: 13vw;
 }
 
 .post-title {
-    font-family: "Times New Roman", Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
-    font-size: 20px;
+    margin: 4px;
+    font-size: 18px;
+    width: 11vw;
 }
 
 .post-content {
@@ -58,11 +72,15 @@
     font-weight: normal;
     text-align: justify;
     font-size: 12px;
+    margin: 0;
+    width: 13vw;
 }
 
 .post-button {
     background-image: url('./favorite.png');    
-    width: 30px;
-    height: 30px;
-
+    width: 1.5vw;
+    height: 3vh;
+    position: absolute;
+    border: none;
+    right: 5px;
 }
